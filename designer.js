@@ -30,10 +30,12 @@
 //        'disabled': ['border-radius']
 //    });
 
-//    /* Override widget's initialization */
-//    Fetch.prototype.init = function() {
-//        this.node.innerHTML = "Widget Text"; /* Include text inside the widget */
-//    }
+    /* Override widget's initialization */
+    Fetch.prototype.init = function() {
+        var imgId = this.id + 'Logo';
+        this.node.innerHTML = '<label for="' + imgId + '">Fetch</label>'
+            + '<img id="' + imgId + '" class="waf-widget waf-fetch-logo" />';
+    }
 
 });
 

@@ -1,3 +1,6 @@
 .waf-widget.waf-fetch {
 
 }
+.waf-widget.waf-fetch-logo {
+	background-image: url( "../icons/logo_fetch.png");
+}
